@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Project1.TSR23_MenDropDown_SelectMaterial">
+      <class name="Project1.TSC11_FindDropDown_Gear">
         <methods>
-          <include name="menDropDown"/>
+          <include name="dropDown"/>
           <include name="login"/>
         </methods>
-      </class> <!-- Project1.TSR23_MenDropDown_SelectMaterial -->
+      </class> <!-- Project1.TSC11_FindDropDown_Gear -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

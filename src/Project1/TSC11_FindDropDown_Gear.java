@@ -34,19 +34,21 @@ WebDriver driver;
 	
 	@Test
 	void dropDown() throws InterruptedException {
-		Thread.sleep(3000);
+		
  		Thread.sleep(3000);
 		driver.findElement(By.xpath("(//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e'])[7]")).click();
 		driver.findElement(By.xpath("(//li[@class='item']//a)[1]")).click();
-		driver.findElement(By.xpath("(//span[@class='product-image-container']//img)[2]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//span[@class='product-image-wrapper']//img)[7]")).click();
 		driver.findElement(By.id("qty")).clear();
 		driver.findElement(By.id("qty")).sendKeys("2");
-		driver.findElement(By.id("product-addtocart-button")).click();
+		
+		driver.findElement(By.xpath("//button[@title='Add to Cart']")).click();
 		
 	}
 	
-	@AfterMethod
-	void closeApplication() {
-		driver.quit();
-	}
+//	@AfterMethod
+//	void closeApplication() {
+//		driver.quit();
+//	}
 }
